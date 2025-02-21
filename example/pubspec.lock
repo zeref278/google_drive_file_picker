@@ -49,6 +49,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.18.0"
+  cupertino_icons:
+    dependency: "direct main"
+    description:
+      name: cupertino_icons
+      sha256: ba631d1c7f7bef6b729a622b7b752645a2d076dba9976925b8f25725a30e1ee6
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.8"
   fake_async:
     dependency: transitive
     description:
@@ -88,6 +96,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  google_drive_file_picker:
+    dependency: "direct main"
+    description:
+      path: ".."
+      relative: true
+    source: path
+    version: "0.0.1"
   google_identity_services_web:
     dependency: transitive
     description:
@@ -97,7 +112,7 @@ packages:
     source: hosted
     version: "0.3.3"
   google_sign_in:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: google_sign_in
       sha256: fad6ddc80c427b0bba705f2116204ce1173e09cf299f85e053d57a55e5b2dd56
@@ -137,7 +152,7 @@ packages:
     source: hosted
     version: "0.12.4+3"
   googleapis:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: googleapis
       sha256: "864f222aed3f2ff00b816c675edf00a39e2aaf373d728d8abec30b37bee1a81c"
@@ -145,7 +160,7 @@ packages:
     source: hosted
     version: "13.2.0"
   http:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: http
       sha256: fe7ab022b76f3034adc518fb6ea04a82387620e19977665ea18d30a1cf43442f
@@ -225,7 +240,7 @@ packages:
     source: hosted
     version: "1.9.0"
   path_provider:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: path_provider
       sha256: "50c5dd5b6e1aaf6fb3a78b33f6aa3afca52bf903a8a5298f53101fdaee55bbcd"
@@ -289,7 +304,7 @@ packages:
     source: hosted
     version: "2.1.8"
   pull_to_refresh_flutter3:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: pull_to_refresh_flutter3
       sha256: "37a88d901cca9a46dbdd46523de8e7b35a3e58634a0e775b1a5904981f69b353"

@@ -47,7 +47,9 @@ class GoogleDriveController {
       if (account != null) {
         authHeaders = await account!.authHeaders;
         authenticateClient = GoogleAuthClient(authHeaders!);
-        return await _openGoogleDriveScreen(context);
+        if (context.mounted) {
+          return await _openGoogleDriveScreen(context);
+        }
       } else {
         log("Google Signin was declined by the user!");
       }

@@ -1,3 +1,4 @@
 ## 0.0.1
-
-* TODO: Describe initial release.
+- Init plugin
+## 0.0.2
+- Update example, README.md

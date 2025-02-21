@@ -238,15 +238,16 @@ class _GoogleDriveScreenState extends State<GoogleDriveScreen> {
     });
 
     if (fileDownloaded != null) {
-      Navigator.popUntil(context, ModalRoute.withName('/google_drive'));
-      Navigator.pop(context, fileDownloaded);
+      if (mounted) {
+        Navigator.popUntil(context, ModalRoute.withName('/google_drive'));
+        Navigator.pop(context, fileDownloaded);
+      }
     }
   }
 }
 
 class _ItemCard extends StatelessWidget {
   _ItemCard({
-    super.key,
     required this.file,
     required this.index,
     required this.onPressed,
@@ -316,7 +317,6 @@ class _ItemCard extends StatelessWidget {
 
 class _FolderCard extends StatelessWidget {
   const _FolderCard({
-    super.key,
     required this.folder,
   });
 

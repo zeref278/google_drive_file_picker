@@ -29,42 +29,35 @@ Run the following command:
 flutter pub get
 ```
 
-### 2. Configure Google Cloud Console
+### 2. Setup Sign In Google
+https://pub.dev/packages/google_sign_in
+
+### 3. Configure Google Cloud Console
 
 1. Go to [Google Cloud Console](https://console.cloud.google.com/).
 2. Create a new project or use an existing one.
 3. Enable the **Google Drive API**.
-4. Create OAuth 2.0 credentials (Client ID & Secret).
-5. Add necessary scopes for file access.
-6. Download the credentials JSON file and configure it in your Flutter project.
+4. CREATE NEW CREDENTIAL (API KEY)
 
 ---
 
 ## Usage
 
-### 1. Authenticate and Initialize
+### 1. Set API Key
 
 ```dart
 import 'package:google_drive_file_picker/google_drive_file_picker.dart';
 
-final GoogleDriveFilePicker picker = GoogleDriveFilePicker();
-await picker.authenticate();
+final GoogleDriveController controller = GoogleDriveController();
+controller.setAPIKey(apiKey: 'your_api_key');
 ```
 
 ### 2. Pick a File
 
 ```dart
-final GoogleDriveFile? file = await picker.pickFile();
-if (file != null) {
-  print("Selected file: ${file.name}");
-}
-```
-
-### 3. Download a File
-
-```dart
-final File localFile = await picker.downloadFile(file);
-print("Downloaded file path: ${localFile.path}");
+final file = await controller.getFileFromGoogleDrive(
+context: context,
+);
 ```
 
 ---
@@ -76,17 +69,8 @@ Make sure to configure the OAuth consent screen and include the necessary **Goog
 ### Required Scopes
 
 ```yaml
-https://www.googleapis.com/auth/drive.file
 https://www.googleapis.com/auth/drive.readonly
 ```
-
----
-
-## Use Cases
-
-- 📁 **Cloud Storage Access** – Retrieve user files stored in Google Drive.
-- 📜 **Document Management** – Fetch and process PDFs, images, and other file formats.
-- 🔄 **Backup & Restore** – Save app data in Google Drive for backup purposes.
 
 ---
 
@@ -102,5 +86,5 @@ Contributions are welcome! Feel free to open an issue or submit a pull request.
 
 ## Contact
 
-For questions or support, reach out via [GitHub Issues](https://github.com/your-repo/google_drive_file_picker/issues).
+For questions or support, reach out via [GitHub Issues](https://github.com/zeref278/google_drive_file_picker/issues).
 
