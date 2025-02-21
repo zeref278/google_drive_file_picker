@@ -16,12 +16,12 @@
 
 Here are some screenshots of the plugin in action:
 
-<video controls>
-  <source src="https://raw.githubusercontent.com/zeref278/google_drive_file_picker/main/attachments/video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div style="display: flex; align-items: center;">
+<img src="https://raw.githubusercontent.com/zeref278/google_drive_file_picker/main/attachments/demo.gif" width="300"/>
 <img src="https://raw.githubusercontent.com/zeref278/google_drive_file_picker/main/attachments/image_1.PNG" width="300"/>
 <img src="https://raw.githubusercontent.com/zeref278/google_drive_file_picker/main/attachments/image_2.PNG" width="300"/>
+</div>
+
 
 
 ---
