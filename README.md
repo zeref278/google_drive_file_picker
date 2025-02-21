@@ -1,4 +1,4 @@
-# google\_drive\_file\_picker
+# google_drive_file_picker
 
 `google_drive_file_picker` is a Flutter plugin that allows users to browse, select, and retrieve files from **Google Drive** within a Flutter application. It provides an easy-to-use API for authentication, file listing, selection, and downloading.
 
@@ -9,6 +9,18 @@
 - 🔍 **Search & Filter** – Filter files by type, name.
 - 📑 **File Selection** – Pick single files.
 - ⬇️ **Download Support** – Download selected files.
+
+---
+
+## Showcase
+
+Here are some screenshots of the plugin in action:
+
+<img src="https://raw.githubusercontent.com/zeref278/google_drive_file_picker/main/attachments/video.mp4" width="300"/>
+
+<img src="https://raw.githubusercontent.com/zeref278/google_drive_file_picker/main/attachments/image_1.png" width="300"/>
+<img src="https://raw.githubusercontent.com/zeref278/google_drive_file_picker/main/attachments/image_2.png" width="300"/>
+
 
 ---
 
@@ -56,7 +68,7 @@ controller.setAPIKey(apiKey: 'your_api_key');
 
 ```dart
 final file = await controller.getFileFromGoogleDrive(
-context: context,
+  context: context,
 );
 ```
 
@@ -87,4 +99,3 @@ Contributions are welcome! Feel free to open an issue or submit a pull request.
 ## Contact
 
 For questions or support, reach out via [GitHub Issues](https://github.com/zeref278/google_drive_file_picker/issues).
-
